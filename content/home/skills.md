@@ -12,16 +12,16 @@ subtitle = ""
 # 
 # Add/remove as many `[[feature]]` blocks below as you like.
 # 
-# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
+# For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "chart-line"
+  icon = "dice"
   icon_pack = "fas"
   name = "Statistics"
   description = "100%"
   
 [[feature]]
-  icon = "chart-scatter"
+  icon = "chart-line"
   icon_pack = "fas"
   name = "Visualization"
   description = "100%"
