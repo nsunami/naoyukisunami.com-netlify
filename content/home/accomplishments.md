@@ -48,5 +48,34 @@ date_format = "Jan 2006"
   date_end = ""
   description = ""
 
+[[item]]
+  organization = "American Psychological Foundation"
+  organization_url = "https://www.apa.org/apf/"
+  title = "APF/COGDOP Graduate Research Scholarship"
+  url = "https://www.apa.org/apf/funding/cogdop"
+  date_start = "2018-09-01"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "Center for Open Science"
+  organization_url = "https://cos.io/"
+  title = "Preregistration Challenge Prize for publishing a preregistered empirical paper in Social Psychological and Personality Science ($1,000)"
+  url = "https://cos.io/our-services/prereg-more-information/"
+  certificate_url = ""
+  date_start = "2018-09-01"
+  date_end = ""
+  description = ""
+
+[[item]]
+  organization = "University of Delaware, Department of Psychological and Brain Sciences"
+  organization_url = "https://www.psych.udel.edu/"
+  title = "Professional Development Award ($500 per year)"
+  url = "https://www.psych.udel.edu/graduate/for-current-students"
+  certificate_url = ""
+  date_start = "2018-09-01"
+  date_end = ""
+  description = ""
+
 
 +++
