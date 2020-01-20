@@ -9,11 +9,6 @@
   weight = 10
 
 [[main]]
-  name = "Experience"
-  url = "#Experience"
-  weight = 20
-
-[[main]]
   name = "Accomplishments"
   url = "#accomplishments"
   weight = 30
