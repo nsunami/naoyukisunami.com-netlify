@@ -24,7 +24,7 @@ date_format = "Jan 2006"
   title = "Graduate Scholarship Award"
   url = ""
   certificate_url = ""
-  date_start = ""
+  date_start = "2018-03-01"
   date_end = ""
   description = ""
 
