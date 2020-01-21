@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Accomplish&shy;ments"
+title = "Grants and Awards"
 subtitle = ""
 
 # Date format
@@ -38,20 +38,20 @@ date_format = "Jan 2006"
   date_end = ""
   description = ""
 
-[[item]]
-  organization = "Psi Chi"
-  organization_url = ""
-  title = "PsiChi Midwestern Psychological Association Regional Travel Grant ($400)"
-  url = ""
-  certificate_url = ""
-  date_start = "2019-01-01"
-  date_end = ""
-  description = ""
+# [[item]]
+#   organization = "Psi Chi"
+#   organization_url = ""
+#   title = "PsiChi Midwestern Psychological Association Regional Travel Grant ($400)"
+#   url = ""
+#   certificate_url = ""
+#   date_start = "2019-01-01"
+#   date_end = ""
+#   description = ""
 
 [[item]]
   organization = "American Psychological Foundation"
   organization_url = "https://www.apa.org/apf/"
-  title = "APF/COGDOP Graduate Research Scholarship"
+  title = "APF/COGDOP Graduate Research Scholarship ($2,000)"
   url = "https://www.apa.org/apf/funding/cogdop"
   date_start = "2018-09-01"
   date_end = ""
@@ -67,15 +67,24 @@ date_format = "Jan 2006"
   date_end = ""
   description = ""
 
+# [[item]]
+#   organization = "University of Delaware, Department of Psychological and Brain Sciences"
+#   organization_url = "https://www.psych.udel.edu/"
+#   title = "Professional Development Award ($500 per year)"
+#   url = "https://www.psych.udel.edu/graduate/for-current-students"
+#   certificate_url = ""
+#   date_start = "2015-09-01"
+#   date_end = "2019-09-01"
+#   description = ""
+
 [[item]]
   organization = "University of Delaware, Department of Psychological and Brain Sciences"
   organization_url = "https://www.psych.udel.edu/"
-  title = "Professional Development Award ($500 per year)"
-  url = "https://www.psych.udel.edu/graduate/for-current-students"
+  title = "Department Chair’s Fellowship (full tuition waver + $25,000 stipend)"
+  url = ""
   certificate_url = ""
   date_start = "2015-09-01"
-  date_end = "2019-09-01"
+  date_end = ""
   description = ""
-
 
 +++
