@@ -30,7 +30,7 @@ education:
   courses:
   - course: Ph.D. in Social Psychology
     institution: University of Delaware
-    year: In Progress
+    year: 2021 (Expected)
   - course: M.S. in Experimental Psychology
     institution: Western Illinois University
     year: 2015
