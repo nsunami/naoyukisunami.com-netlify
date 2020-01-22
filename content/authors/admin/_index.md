@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Ph.D. Graduate Student
+role: Ph.D. Candidate
 
 # Organizations/Affiliations
 organizations:
@@ -84,4 +84,4 @@ user_groups:
 - Visitors
 ---
 
-Hi! I'm a Social Psychology Ph.D. student at the University of Delaware. I study how people connect with each other and regulate a sense of belonging. My recent work focused on how people respond to social rejection using behavioral and physiological measures. I advocate practices improving replicability, reproducibility, and openness.  I'm currently working at [Close Relationship and Health Lab](http://projectclose.com/) with my mentor, [Lisa Jaremka](http://lisajaremka.com/).
+Hi! I'm a Social Psychology Ph.D. candidate at the University of Delaware. I study how people connect with each other and regulate a sense of belonging. My recent work focused on how people respond to social rejection using behavioral and physiological measures. I advocate practices improving replicability, reproducibility, and openness.  I'm currently working at [Close Relationship and Health Lab](http://projectclose.com/) with my mentor, [Lisa Jaremka](http://lisajaremka.com/).
