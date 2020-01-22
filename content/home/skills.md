@@ -15,6 +15,12 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
+  icon = "flask"
+  icon_pack = "fas"
+  name = "Study Design"
+  description = ""
+
+[[feature]]
   icon = "dice"
   icon_pack = "fas"
   name = "Statistics"
@@ -36,6 +42,12 @@ subtitle = ""
   icon = "python"
   icon_pack = "fab"
   name = "Python"
+  description = ""
+  
+[[feature]]
+  icon = "open-access"
+  icon_pack = "ai"
+  name = "Open Science"
   description = ""
 
 +++
