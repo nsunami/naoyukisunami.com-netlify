@@ -31,60 +31,91 @@ date_format = "Jan 2006"
 [[item]]
   organization = "University of Melbourne"
   organization_url = ""
-  title = "Travel Grant for repliCATS Workshop in the Netherlands ($1,000)"
+  title = "Travel Grant for repliCATS Workshop in the Netherlands"
   url = ""
   certificate_url = ""
   date_start = "2019-08-01"
   date_end = ""
   description = ""
 
-# [[item]]
-#   organization = "Psi Chi"
-#   organization_url = ""
-#   title = "PsiChi Midwestern Psychological Association Regional Travel Grant ($400)"
-#   url = ""
-#   certificate_url = ""
-#   date_start = "2019-01-01"
-#   date_end = ""
-#   description = ""
-
-[[item]]
-  organization = "American Psychological Foundation"
-  organization_url = "https://www.apa.org/apf/"
-  title = "APF/COGDOP Graduate Research Scholarship ($2,000)"
-  url = "https://www.apa.org/apf/funding/cogdop"
-  date_start = "2018-09-01"
-  date_end = ""
-  description = ""
+ [[item]]
+   organization = "Psi Chi"
+   organization_url = ""
+   title = "PsiChi Midwestern Psychological Association Regional Travel Grant"
+   url = ""
+   certificate_url = ""
+   date_start = "2019-01-01"
+   date_end = ""
+   description = ""
 
 [[item]]
   organization = "Center for Open Science"
   organization_url = "https://cos.io/"
-  title = "Preregistration Challenge Prize for publishing a preregistered empirical paper in Social Psychological and Personality Science ($1,000)"
+  title = "Preregistration Challenge Prize for publishing a preregistered empirical paper in Social Psychological and Personality Science"
   url = "https://cos.io/our-services/prereg-more-information/"
   certificate_url = ""
   date_start = "2018-09-01"
   date_end = ""
   description = ""
+  
+[[item]]
+  organization = "American Psychological Foundation"
+  organization_url = "https://www.apa.org/apf/"
+  title = "APF/COGDOP Graduate Research Scholarship"
+  url = "https://www.apa.org/apf/funding/cogdop"
+  date_start = "2018-09-01"
+  date_end = ""
+  description = ""
 
-# [[item]]
-#   organization = "University of Delaware, Department of Psychological and Brain Sciences"
-#   organization_url = "https://www.psych.udel.edu/"
-#   title = "Professional Development Award ($500 per year)"
-#   url = "https://www.psych.udel.edu/graduate/for-current-students"
-#   certificate_url = ""
-#   date_start = "2015-09-01"
-#   date_end = "2019-09-01"
-#   description = ""
+
+ [[item]]
+   organization = "University of Delaware, Department of Psychological and Brain Sciences"
+   organization_url = "https://www.psych.udel.edu/"
+   title = "Professional Development Award"
+   url = "https://www.psych.udel.edu/graduate/for-current-students"
+   certificate_url = ""
+   date_start = "2015-09-01"
+   date_end = "2019-09-01"
+   description = ""
+   
+ [[item]]
+   organization = "Society for Personality and Social Psychology"
+   organization_url = ""
+   title = "SPSP Travel Award"
+   url = ""
+   certificate_url = ""
+   date_start = "2017-09-01"
+   date_end = ""
+   description = ""
+
+ [[item]]
+   organization = "Phi Kappa Phi"
+   organization_url = ""
+   title = "Love of Learning Award"
+   url = ""
+   certificate_url = ""
+   date_start = "2016-09-01"
+   date_end = ""
+   description = ""
 
 [[item]]
   organization = "University of Delaware, Department of Psychological and Brain Sciences"
   organization_url = "https://www.psych.udel.edu/"
-  title = "Department Chair’s Fellowship (full tuition waver + $25,000 stipend)"
+  title = "Department Chair’s Fellowship"
   url = ""
   certificate_url = ""
   date_start = "2015-09-01"
   date_end = ""
+  description = ""
+
+[[item]]
+  organization = "Western Illinois University, School of Graduate Studies"
+  organization_url = "https://www.wiu.edu/"
+  title = "Graduate Student Research and Professional Development Fund"
+  url = ""
+  certificate_url = ""
+  date_start = "2014-09-01"
+  date_end = "2015-05-01"
   description = ""
 
 +++
