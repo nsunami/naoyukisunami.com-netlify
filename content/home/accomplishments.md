@@ -21,7 +21,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "University of Delaware, Office of Graduate and Professional Education"
   organization_url = "https://grad.udel.edu/"
-  title = "Summer Doctoral Fellowship ($4,500)"
+  title = "Summer Doctoral Fellowship"
   url = "https://grad.udel.edu/fees-and-funding/summer-doctoral-fellowship/"
   certificate_url = ""
   date_start = "2019-08-31"
@@ -30,7 +30,7 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "University of Melbourne"
-  organization_url = ""
+  organization_url = "https://replicats.research.unimelb.edu.au/"
   title = "Travel Grant for repliCATS Workshop in the Netherlands"
   url = ""
   certificate_url = ""
@@ -40,7 +40,7 @@ date_format = "Jan 2006"
 
  [[item]]
    organization = "Psi Chi"
-   organization_url = ""
+   organization_url = "https://www.psichi.org/"
    title = "PsiChi Midwestern Psychological Association Regional Travel Grant"
    url = ""
    certificate_url = ""
@@ -80,7 +80,7 @@ date_format = "Jan 2006"
    
  [[item]]
    organization = "Society for Personality and Social Psychology"
-   organization_url = ""
+   organization_url = "https://www.spsp.org/"
    title = "SPSP Travel Award"
    url = ""
    certificate_url = ""
@@ -90,7 +90,7 @@ date_format = "Jan 2006"
 
  [[item]]
    organization = "Phi Kappa Phi"
-   organization_url = ""
+   organization_url = "https://www.phikappaphi.org/"
    title = "Love of Learning Award"
    url = ""
    certificate_url = ""
