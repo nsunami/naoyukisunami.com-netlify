@@ -39,10 +39,10 @@ projects = []
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["belonging", "social rejection", "antisocial behavior", "prosocial behavior", "replication", "need to belong"]
+tags = ["belonging", "social rejection", "antisocial behavior", "prosocial behavior", "need to belong", "coping"]
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "Sunami et al. - 2019 - The bi-dimensional rejection taxonomy  Organizing.pdf"
 url_preprint = "https://psyarxiv.com/56ptx/"
 url_code = ""
 url_dataset = ""
