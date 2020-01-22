@@ -8,5 +8,10 @@ abstract: "Objective: Intimate partner abuse is a prevalent public health issue 
 featured: false
 publication: "*Psychology of Violence*"
 doi: "http://dx.doi.org/10.1037/vio0000122"
+
+url_pdf: 'Sunami et al_2017_The role of alcohol problems in the association between intimate partner abuse.pdf'
+
+tags: ["aggression", "suicidality"]
+
 ---
 

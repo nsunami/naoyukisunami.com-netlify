@@ -10,6 +10,13 @@ publication: "*Social and Personality Psychology Compass*"
 url_pdf: "Sunami et al. - 2019 - The bi-dimensional rejection taxonomy.pdf"
 url_preprint: "https://psyarxiv.com/56ptx/"
 
+links:
+  - name: ResearchGate
+    url: 'https://www.researchgate.net/publication/335710216_The_bi-dimensional_rejection_taxonomy_Organizing_responses_to_interpersonal_rejection_along_antisocial-prosocial_and_engaged-disengaged_dimensions'
+
 doi: "10.1111/spc3.12497"
+
+tags: ["belonging", "social rejection", "antisocial behavior", "prosocial behavior", "need to belong", "coping"]
+
 ---
 
