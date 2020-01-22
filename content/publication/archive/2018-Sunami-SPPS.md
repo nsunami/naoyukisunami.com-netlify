@@ -42,7 +42,7 @@ projects = []
 tags = ["belonging", "social rejection", "antisocial behavior", "prosocial behavior", "replication", "need to belong"]
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "Sunami et al. - 2018 - Prospect of Fulfilling Belonging.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -51,6 +51,7 @@ url_slides = ""
 url_video = ""
 url_poster = ""
 url_source = ""
+
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
