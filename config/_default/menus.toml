@@ -9,14 +9,19 @@
   weight = 10
 
 [[main]]
-  name = "Accomplishments"
+  name = "Grants & Awards"
   url = "#accomplishments"
   weight = 30
 
 [[main]]
   name = "Publications"
-  url = "#featured"
+  url = "#publications"
   weight = 40
+
+[[main]]
+  name = "Talks & Presentations"
+  url = "#talks"
+  weight = 50
 
 [[main]]
   name = "Contact"
@@ -27,5 +32,5 @@
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
    name = "CV"
-   url = "files/Sunami_CV.pdf"
+   url = "Sunami_CV.pdf"
    weight = 70
