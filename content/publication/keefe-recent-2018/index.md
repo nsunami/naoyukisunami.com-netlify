@@ -7,7 +7,7 @@ publication_types: ["2"]
 abstract: "Sexual assault and suicide are 2 of many issues facing college students. Recent research calls for an examination of anger in suicidal behavior. Through a series of moderated logistic regression models, the authors examined the moderating effects of anger on the association of recent sexual assault and suicidal behaviors. Results support the moderating role of anger in the association of sexual assault with suicidal thinking, but not with self-injury or suicide attempts. The authors discuss practitioner implications."
 featured: false
 publication: "*Journal of College Counseling*"
-url_pdf: "http://onlinelibrary.wiley.com/doi/abs/10.1002/jocc.12090"
+#url_pdf: "http://onlinelibrary.wiley.com/doi/abs/10.1002/jocc.12090"
 doi: "10.1002/jocc.12090"
 ---
 
