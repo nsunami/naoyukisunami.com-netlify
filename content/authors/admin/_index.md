@@ -72,7 +72,7 @@ social:
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: files/Sunami_cv.pdf
+  link: Sunami_CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "naoyuki.sunami@gmail.com"
