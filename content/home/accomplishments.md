@@ -34,7 +34,7 @@ date_format = "Jan 2006"
   title = "Travel Grant for repliCATS Workshop in the Netherlands"
   url = ""
   certificate_url = ""
-  date_start = "2019-08-01"
+  date_start = "2019-07-05"
   date_end = ""
   description = ""
 
