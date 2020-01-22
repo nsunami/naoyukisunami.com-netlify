@@ -28,13 +28,13 @@ interests:
 
 education:
   courses:
-  - course: Ph.D. in Social Psychology
+  - course: Ph.D. Social Psychology
     institution: University of Delaware
     year: 2021 (Expected)
-  - course: M.S. in Experimental Psychology
+  - course: M.S. Experimental Psychology
     institution: Western Illinois University
     year: 2015
-  - course: B.S. in Psychology
+  - course: B.S. Psychology
     institution: Saint Louis University
     year: 2009
 
