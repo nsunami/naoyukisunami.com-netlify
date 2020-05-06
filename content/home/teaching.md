@@ -15,6 +15,7 @@ weight = 100
 
 +++
 
-## Introduction to Statistics (UD-PSYC209)
+## Measurement and Statistics (UD-PSYC209)
 An introductory statistics course with R
-
+- [Sample Syllabus](PSYC209_Syllabus.pdf) 
+- [Course Materials](https://osf.io/92n3b/)
