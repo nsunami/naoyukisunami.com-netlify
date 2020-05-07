@@ -19,6 +19,16 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
+  organization = "University of Delaware, Graduate College"
+  organization_url = "https://grad.udel.edu/"
+  title = "University Doctoral Fellowship Award"
+  url = "https://grad.udel.edu/fees-and-funding/ud-doctoral-fellowship-award/"
+  certificate_url = ""
+  date_start = "2020-07-01"
+  date_end = "2021-06-30"
+  description = ""
+
+[[item]]
   organization = "University of Delaware, Office of Graduate and Professional Education"
   organization_url = "https://grad.udel.edu/"
   title = "Summer Doctoral Fellowship"
@@ -31,7 +41,7 @@ date_format = "Jan 2006"
 [[item]]
   organization = "University of Melbourne"
   organization_url = "https://replicats.research.unimelb.edu.au/"
-  title = "Travel Grant for repliCATS Workshop in the Netherlands"
+  title = "repliCATS Travel Grant"
   url = ""
   certificate_url = ""
   date_start = "2019-07-05"
