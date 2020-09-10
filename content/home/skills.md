@@ -14,40 +14,25 @@ subtitle = ""
 # 
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
-[[feature]]
-  icon = "flask"
-  icon_pack = "fas"
-  name = "Study Design"
-  description = ""
-
-[[feature]]
-  icon = "dice"
-  icon_pack = "fas"
-  name = "Statistics"
-  description = ""
-  
-[[feature]]
-  icon = "chart-line"
-  icon_pack = "fas"
-  name = "Visualization"
-  description = ""
-
-[[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "R"
-  description = ""
-  
-[[feature]]
-  icon = "python"
-  icon_pack = "fab"
-  name = "Python"
-  description = ""
   
 [[feature]]
   icon = "open-access"
   icon_pack = "ai"
   name = "Open Science"
-  description = ""
+  description = "preregistration & registered reports"
+
+
+[[feature]]
+  icon = "flask"
+  icon_pack = "fas"
+  name = "Study Design & Methodology"
+  description = "experimental designs, a priori power analysis"
+
+[[feature]]
+  icon = "r-project"
+  icon_pack = "fab"
+  name = "R"
+  description = "reproducible data preprocessing, analyses, & visualization"
+
 
 +++

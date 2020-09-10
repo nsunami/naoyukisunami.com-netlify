@@ -1,6 +1,6 @@
 +++
 # Accomplishments widget.
-widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "accomplishments_tight"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
@@ -26,6 +26,16 @@ date_format = "Jan 2006"
   certificate_url = ""
   date_start = "2020-07-01"
   date_end = "2021-06-30"
+  description = ""
+
+[[item]]
+  organization = "University of Delaware, Social Psychology Program"
+  organization_url = ""
+  title = "The Sam Gaertner Research Excellence Award in Social Psychology"
+  url = ""
+  certificate_url = ""
+  date_start = "2020-05-01"
+  date_end = ""
   description = ""
 
 [[item]]
