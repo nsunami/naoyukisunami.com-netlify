@@ -29,6 +29,15 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
+  organization = "The Japanese Psychological Association"
+  organization_url = "https://psych.or.jp"
+  title = "Research Grant on New Coronavirus"
+  url = "https://psych.or.jp/jishinjoho/2020_COVID-19_grant/"
+  certificate_url = ""
+  date_start = "2020-07-01"
+  description = ""
+
+[[item]]
   organization = "University of Delaware, Social Psychology Program"
   organization_url = ""
   title = "The Sam Gaertner Research Excellence Award in Social Psychology"
@@ -77,7 +86,7 @@ date_format = "Jan 2006"
   date_start = "2018-09-01"
   date_end = ""
   description = ""
-  
+
 [[item]]
   organization = "American Psychological Foundation"
   organization_url = "https://www.apa.org/apf/"
@@ -97,7 +106,7 @@ date_format = "Jan 2006"
    date_start = "2015-09-01"
    date_end = "2019-09-01"
    description = ""
-   
+
  [[item]]
    organization = "Society for Personality and Social Psychology"
    organization_url = "https://www.spsp.org/"
