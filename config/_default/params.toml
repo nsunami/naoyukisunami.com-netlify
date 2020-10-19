@@ -262,3 +262,7 @@ plugins_js  = []
 
 [icon.pack]
   ai = true
+
+
+[cms]
+  netlify_cms = true
