@@ -1,0 +1,115 @@
+---
+title: "Google Search Interests in Video Games during the COVID-19 lockdown in the US"
+page_type: "post"
+summary: "Search interests for video games seemed to have increased in response to the COVID-19 stay-at-home order in the US"
+date: 2020-10-21
+output: 
+  html_notebook: 
+    code_folding: hide
+---
+
+
+
+<div id="background" class="section level1">
+<h1>Background</h1>
+<p>Stay-at-home orders for COVID-19 forced people to stay at home. Anecdotal and media reports suggested that people consumed more and more video games during the lockdown. Below, I will use the Google Trend Data for the topic Video Game in the US to visualize how the interests in video games increased during the lockdown compared with the previous years, and the number of states who declared a stay-at-home order.</p>
+</div>
+<div id="method" class="section level1">
+<h1>Method</h1>
+<pre class="r"><code># Load Libraries
+library(tidyverse)
+library(lubridate)
+library(gtrendsR)
+library(here)
+
+# API Code from GTrend
+filename &lt;- &quot;Google Trend - Gaming.csv&quot;
+# Topics:
+#   - Video Game (%2Fm%2F01mw1)
+#   - Game (%2Fm%2F03bt1gh)
+
+# Get the gtrend data
+video_game_topic_id &lt;- &quot;%2Fm%2F01mw1&quot;
+video_game_gtrend &lt;- gtrends(keyword = video_game_topic_id,
+                             onlyInterest = TRUE, geo = &quot;US&quot;)
+
+# Get a tibble from gtrend list
+video_game_gtrend_interests &lt;- video_game_gtrend[[&quot;interest_over_time&quot;]] %&gt;% 
+    as_tibble() %&gt;%
+  filter(year(date) %in% 2016:2020)
+
+# Save out as a CSV
+write_csv(video_game_gtrend_interests, here(&quot;static/data/video_game_gtrend.csv&quot;))
+
+# Load stay-at-home data from Wikipedia
+stay_home_dates &lt;- read_csv(here(&quot;static/data/wikipedia.csv&quot;),
+                            col_types = list()) # load with auto col types
+# Get the df showing how many states are stay-at-home at an given date
+stayathome_df &lt;- stay_home_dates %&gt;% 
+  select(-Stateofemergencydeclared) %&gt;%
+  pivot_longer(c(Stayathomeordered, Datelifted),
+               values_to = &quot;date&quot;, names_to = &quot;Event&quot;) %&gt;%
+  arrange(date) %&gt;%
+  mutate(weight = case_when(Event == &quot;Stayathomeordered&quot; &amp; is.na(date) == FALSE ~ 1,
+                            Event == &quot;Datelifted&quot; &amp; is.na(date) == FALSE ~ -1)) %&gt;% 
+  mutate(n_stayathome = cumsum(weight)) %&gt;%
+  # When multiple states declare stay-at-home, we want to sum the number
+  group_by(date) %&gt;% slice_tail() %&gt;%
+  # We only need date and n_stayathome
+  select(date, n_stayathome)
+
+## Combine the stayathome df with the google, fill downward
+vg_home_df &lt;- video_game_gtrend_interests %&gt;%
+  full_join(stayathome_df, by = &quot;date&quot;) %&gt;% 
+  drop_na(date) %&gt;%
+  arrange(date) %&gt;%
+  fill(n_stayathome, .direction = &quot;down&quot;) %&gt;% 
+  mutate(plot_date = as_datetime(&quot;2020-1-1&quot;) + days(yday(date)),
+         # Make different x-axes for the stay at home states and hits 
+         # so that geom_line interpolates
+         plot_date_stayathome = case_when(!is.na(n_stayathome) ~ plot_date),
+         plot_date_hits = case_when(!is.na(hits) ~ plot_date))</code></pre>
+<p>I used data from <a href="https://trends.google.com/">Google Trend Scores</a>. I chose the topic <code>Video Game</code> (Topic ID: <code>%2Fm%2F01mw1</code>, rather than using a specific search term, to get the overall search interests in this topic. The data included the Google Trend scores from 2016-01-03 to 2020-10-18. I downloaded data using the <code>gtrendsR::gtrends()</code> function.</p>
+<p>To get the number of states that were under a stay-at-home order, I used the table from the Wikipedia entry, <a href="https://en.wikipedia.org/wiki/U.S._state_and_local_government_responses_to_the_COVID-19_pandemic">“U.S. state and local government responses to the COVID-19 pandemic”</a>. I had to do some manual cleaning on this. The file is available as <code>wikipedia.csv</code> in the data folder.</p>
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>The plot shows the Google Trend Scores for the topic <code>Video Game</code> on y-axis. The x-axis represents months of a year. The colored lines represent the years. The gray line represents the number of stats on a stay-at-home order on a given date in 2020.</p>
+<p>The upward spikes of the Google Trend Scores seems to correspond with the upward spike of the number of stay-at-home order states (Mid-March to April). Both the Google Trend Scores and the number of stay-at-home order states remained high until May. Then, the interests in video games seems to take on a decreasing trend as some states started to reopen, while they remain higher than those in the pre-COVID years.</p>
+<p>The Google Trend scores in 2020 so far did not exceed with the highest scores observed in November and December in 2015-2020 (probably corresponding with the holiday shopping seasons).</p>
+<pre class="r"><code># Axis scaling factor for the second (stay-at-home) y-axis
+sec_axis_scaling &lt;- 3
+
+# Plot
+vg_home_df %&gt;%
+  # the x-axis is the day of the year. Set year to 2020 for plotting
+  # yday() gets the order of the date in a given year. days() converts the integer to interval obj
+  # adding them up gives the hypothetical day of the year for plotting
+  ggplot(aes(y = hits,
+             group = factor(year(date)),
+             color = factor(year(date)))) +
+  # Line for the gtrend scores
+  geom_line(aes(x = plot_date_hits), size = 1.5, alpha = .7, na.rm = TRUE)  + 
+  # Line for the stay-at-home order
+  geom_line(aes(x = plot_date_stayathome,y = n_stayathome*sec_axis_scaling, color = NULL),
+            color = &quot;gray&quot;, size = 1.2, alpha = .8, na.rm = TRUE) + 
+  # Labels
+  #   Y-axis
+  ylab(&quot;Trend Scores for \&quot;Video game\&quot; (US)&quot;) +
+  #   Second Y-axis
+  scale_y_continuous(sec.axis = sec_axis(~./sec_axis_scaling,
+                                         name = &quot;Number of Stay-At-Home States&quot;)) + 
+  #   X-axis
+  scale_x_datetime(date_labels = &quot;%b&quot;, name = &quot;Month&quot;, date_breaks = &quot;1 month&quot;) + 
+  #   Caption
+  labs(caption = &quot;Source: Google Trends (https://trends.google.com/), Wikipedia&quot;) +
+  #   Legend Title
+  scale_color_discrete(name = &quot;Year&quot;) + 
+  # Theme
+  theme_classic(base_size = 12)</code></pre>
+<p><img src="/post/Google_Trend_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+<div id="conclusion" class="section level1">
+<h1>Conclusion</h1>
+<p>Search interests in video games seemed to have spiked up during the stay-at-home orders in the US, compared with the trends in the previous years.</p>
+</div>

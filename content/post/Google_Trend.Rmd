@@ -1,0 +1,125 @@
+---
+title: "Google Search Interests in Video Games during the COVID-19 lockdown in the US"
+page_type: "post"
+summary: "Search interests for video games seemed to have increased in response to the COVID-19 stay-at-home order in the US"
+date: 2020-10-21
+output: 
+  html_notebook: 
+    code_folding: hide
+---
+
+# Background
+Stay-at-home orders for COVID-19 forced people to stay at home. Anecdotal and media reports suggested that people consumed more and more video games during the lockdown. Below, I will use the Google Trend Data for the topic Video Game in the US to visualize how the interests in video games increased during the lockdown compared with the previous years, and the number of states who declared a stay-at-home order.
+
+# Method
+
+
+```{r message=FALSE, warning=FALSE}
+# Load Libraries
+library(tidyverse)
+library(lubridate)
+library(gtrendsR)
+library(here)
+
+# API Code from GTrend
+filename <- "Google Trend - Gaming.csv"
+# Topics:
+#   - Video Game (%2Fm%2F01mw1)
+#   - Game (%2Fm%2F03bt1gh)
+
+# Get the gtrend data
+video_game_topic_id <- "%2Fm%2F01mw1"
+video_game_gtrend <- gtrends(keyword = video_game_topic_id,
+                             onlyInterest = TRUE, geo = "US")
+
+# Get a tibble from gtrend list
+video_game_gtrend_interests <- video_game_gtrend[["interest_over_time"]] %>% 
+    as_tibble() %>%
+  filter(year(date) %in% 2016:2020)
+
+# Save out as a CSV
+write_csv(video_game_gtrend_interests, here("static/data/video_game_gtrend.csv"))
+
+# Load stay-at-home data from Wikipedia
+stay_home_dates <- read_csv(here("static/data/wikipedia.csv"),
+                            col_types = list()) # load with auto col types
+# Get the df showing how many states are stay-at-home at an given date
+stayathome_df <- stay_home_dates %>% 
+  select(-Stateofemergencydeclared) %>%
+  pivot_longer(c(Stayathomeordered, Datelifted),
+               values_to = "date", names_to = "Event") %>%
+  arrange(date) %>%
+  mutate(weight = case_when(Event == "Stayathomeordered" & is.na(date) == FALSE ~ 1,
+                            Event == "Datelifted" & is.na(date) == FALSE ~ -1)) %>% 
+  mutate(n_stayathome = cumsum(weight)) %>%
+  # When multiple states declare stay-at-home, we want to sum the number
+  group_by(date) %>% slice_tail() %>%
+  # We only need date and n_stayathome
+  select(date, n_stayathome)
+
+## Combine the stayathome df with the google, fill downward
+vg_home_df <- video_game_gtrend_interests %>%
+  full_join(stayathome_df, by = "date") %>% 
+  drop_na(date) %>%
+  arrange(date) %>%
+  fill(n_stayathome, .direction = "down") %>% 
+  mutate(plot_date = as_datetime("2020-1-1") + days(yday(date)),
+         # Make different x-axes for the stay at home states and hits 
+         # so that geom_line interpolates
+         plot_date_stayathome = case_when(!is.na(n_stayathome) ~ plot_date),
+         plot_date_hits = case_when(!is.na(hits) ~ plot_date))
+```
+
+
+
+I used data from [Google Trend Scores](https://trends.google.com/). I chose the topic `Video Game` (Topic ID: ``r video_game_topic_id``, rather than using a specific search term, to get the overall search interests in this topic. The data included the Google Trend scores from `r video_game_gtrend_interests$date %>% min()` to `r video_game_gtrend_interests$date %>% max()`. I downloaded data using the `gtrendsR::gtrends()` function.
+
+To get the number of states that were under a stay-at-home order, I used the table from the Wikipedia entry, ["U.S. state and local government responses to the COVID-19 pandemic"](https://en.wikipedia.org/wiki/U.S._state_and_local_government_responses_to_the_COVID-19_pandemic). I had to do some manual cleaning on this. The file is available as `wikipedia.csv` in the data folder.
+
+
+# Results
+
+The plot shows the Google Trend Scores for the topic `Video Game` on the y-axis. The x-axis represents months of a year. The colored lines represent the years. The gray line represents the number of stats on a stay-at-home order on a given date in 2020.
+
+The upward spikes of the Google Trend Scores seem to correspond with the upward spike of the number of stay-at-home order states (Mid-March to April). Both the Google Trend Scores and the number of stay-at-home order states remained high until May. Then, the interest in video games seems to take on a decreasing trend as some states started to reopen, while they remain higher than those in the pre-COVID years.
+
+The Google Trend scores in 2020 so far did not exceed with the highest scores observed in November and December in 2015-2020 (probably corresponding with the holiday shopping seasons). 
+
+```{r message=FALSE, warning=FALSE}
+# Axis scaling factor for the second (stay-at-home) y-axis
+sec_axis_scaling <- 3
+
+# Plot
+vg_home_df %>%
+  # the x-axis is the day of the year. Set year to 2020 for plotting
+  # yday() gets the order of the date in a given year. days() converts the integer to interval obj
+  # adding them up gives the hypothetical day of the year for plotting
+  ggplot(aes(y = hits,
+             group = factor(year(date)),
+             color = factor(year(date)))) +
+  # Line for the gtrend scores
+  geom_line(aes(x = plot_date_hits), size = 1.5, alpha = .7, na.rm = TRUE)  + 
+  # Line for the stay-at-home order
+  geom_line(aes(x = plot_date_stayathome,y = n_stayathome*sec_axis_scaling, color = NULL),
+            color = "gray", size = 1.2, alpha = .8, na.rm = TRUE) + 
+  # Labels
+  #   Y-axis
+  ylab("Trend Scores for \"Video game\" (US)") +
+  #   Second Y-axis
+  scale_y_continuous(sec.axis = sec_axis(~./sec_axis_scaling,
+                                         name = "Number of Stay-At-Home States")) + 
+  #   X-axis
+  scale_x_datetime(date_labels = "%b", name = "Month", date_breaks = "1 month") + 
+  #   Caption
+  labs(caption = "Source: Google Trends (https://trends.google.com/), Wikipedia") +
+  #   Legend Title
+  scale_color_discrete(name = "Year") + 
+  # Theme
+  theme_classic(base_size = 12)
+```
+
+# Conclusion
+Search interests in video games seemed to have spiked up during the stay-at-home orders in the US, compared with the trends in the previous years.
+
+
+ 
