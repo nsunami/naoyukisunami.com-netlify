@@ -155,6 +155,11 @@ docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
 # Enable in-built social sharing buttons? (true/false)
 sharing = true
 
+# Show a copyright license from creativecommons.org in the site footer?
+# Page specific copyright licenses are also possible by adding this option to a page's front matter.
+copyright_license = {enable = true, allow_derivatives = true, share_alike = false, allow_commercial = true, notice = "This work is licensed under {license}"}
+
+
 # Link authors to their profile page? (true/false)
 link_authors = true
 
@@ -278,3 +283,5 @@ disable_codefolding = false
 codefolding_show = "hide"
 # Set to true to exclude the "Show/hide all" button
 codefolding_nobutton = false
+
+
