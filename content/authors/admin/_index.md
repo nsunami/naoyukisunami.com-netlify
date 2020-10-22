@@ -1,6 +1,7 @@
 ---
 # Display name
-name: Naoyuki 'Nami' Sunami (角南直幸)
+title: "Naoyuki Sunami (角南直幸)"
+
 
 # Username (this should match the folder name)
 authors: admin
