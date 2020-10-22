@@ -74,8 +74,8 @@ vg_home_df &lt;- video_game_gtrend_interests %&gt;%
 </div>
 <div id="results" class="section level1">
 <h1>Results</h1>
-<p>The plot shows the Google Trend Scores for the topic <code>Video Game</code> on y-axis. The x-axis represents months of a year. The colored lines represent the years. The gray line represents the number of stats on a stay-at-home order on a given date in 2020.</p>
-<p>The upward spikes of the Google Trend Scores seems to correspond with the upward spike of the number of stay-at-home order states (Mid-March to April). Both the Google Trend Scores and the number of stay-at-home order states remained high until May. Then, the interests in video games seems to take on a decreasing trend as some states started to reopen, while they remain higher than those in the pre-COVID years.</p>
+<p>The plot shows the Google Trend Scores for the topic <code>Video Game</code> on the y-axis. The x-axis represents months of a year. The colored lines represent the years. The gray line represents the number of stats on a stay-at-home order on a given date in 2020.</p>
+<p>The upward spikes of the Google Trend Scores seem to correspond with the upward spike of the number of stay-at-home order states (Mid-March to April). Both the Google Trend Scores and the number of stay-at-home order states remained high until May. Then, the interest in video games seems to take on a decreasing trend as some states started to reopen, while they remain higher than those in the pre-COVID years.</p>
 <p>The Google Trend scores in 2020 so far did not exceed with the highest scores observed in November and December in 2015-2020 (probably corresponding with the holiday shopping seasons).</p>
 <pre class="r"><code># Axis scaling factor for the second (stay-at-home) y-axis
 sec_axis_scaling &lt;- 3
@@ -107,7 +107,7 @@ vg_home_df %&gt;%
   scale_color_discrete(name = &quot;Year&quot;) + 
   # Theme
   theme_classic(base_size = 12)</code></pre>
-<p><img src="/post/Google_Trend_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="/post/Google_Trend/Google_Trend_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 </div>
 <div id="conclusion" class="section level1">
 <h1>Conclusion</h1>
