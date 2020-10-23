@@ -98,9 +98,6 @@ sec_axis_scaling <- 3
 
 # Plot
 vg_home_df %>%
-  # the x-axis is the day of the year. Set year to 2020 for plotting
-  # yday() gets the order of the date in a given year. days() converts the integer to interval obj
-  # adding them up gives the hypothetical day of the year for plotting
   ggplot(aes(y = hits,
              group = factor(year(date)),
              color = factor(year(date)))) +
