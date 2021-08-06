@@ -10,7 +10,7 @@ authors: admin
 superuser: true
 
 # Role/position
-role: Ph.D. Candidate
+role: Researcher
 
 # Organizations/Affiliations
 organizations:
@@ -21,16 +21,16 @@ organizations:
 bio: My research interests include belonging and social rejection
 
 interests:
-- Belonging & Social Rejection
+- Belonging & Social Rejection/Inclusion
 - Open Science & Replicability
-- Psychophysiology (ECG, ICG)
 - Data Science (R, Python)
+- Social Justice
 
 education:
   courses:
   - course: Ph.D. Social Psychology
     institution: University of Delaware
-    year: 2021 (Expected)
+    year: 2021
   - course: M.S. Experimental Psychology
     institution: Western Illinois University
     year: 2015
@@ -84,4 +84,6 @@ user_groups:
 - Visitors
 ---
 
-Hi! I'm a Social Psychology Ph.D. candidate at the University of Delaware. I study how people connect with each other and regulate a sense of belonging. My recent work focused on how people respond to social rejection using behavioral and physiological measures. I advocate practices improving replicability, reproducibility, and openness.  I'm currently working at [Close Relationship and Health Lab](http://projectclose.com/) with my mentor, [Lisa Jaremka](http://lisajaremka.com/).
+I am a social psychological scientist with 7+ years of experience designing, executing, and reporting studies in behavioral sciences via open and transparent methods. My work has focused on examining social rejection/inclusion and belonging—based on the premise that social connections are the foundation of the human society.
+
+I value open science and transparency to decentralize power, promote the free distribution of knowledge, and increase participation from historically underrepresented groups.
