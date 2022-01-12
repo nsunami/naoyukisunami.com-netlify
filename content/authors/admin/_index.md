@@ -18,7 +18,7 @@ organizations:
   url: "https://ddil.ai/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I'm a social research and data scientist working to advance openness and transparency
+bio: I'm a social research and data scientist working to advance openness, transparency, and social justice
 
 interests:
 - Open Science & Replicability
