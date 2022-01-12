@@ -10,18 +10,17 @@ authors: admin
 superuser: true
 
 # Role/position
-role: Researcher
+role: Data Scientist
 
 # Organizations/Affiliations
 organizations:
-- name: University of Delaware
-  url: "https://www.psych.udel.edu/people/full-list-searchable/nsunami"
+- name: Delaware Data Innovation Lab @ Tech Impact
+  url: "https://ddil.ai/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include belonging and social rejection
 
 interests:
-- Belonging & Social Rejection/Inclusion
 - Open Science & Replicability
 - Data Science (R, Python)
 - Social Justice
