@@ -1,6 +1,6 @@
 ---
 # Display name
-title: "Naoyuki Sunami (角南直幸)"
+title: "Naoyuki 'Nami' Sunami (角南直幸)"
 
 
 # Username (this should match the folder name)
