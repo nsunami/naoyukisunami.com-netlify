@@ -74,4 +74,4 @@ user_groups:
 - Visitors
 ---
 
-I am a research data scientist with 7+ years of experience in behavioral sciences, advancing openess and transparency. I value open science and transparency to decentralize power, promote the free distribution of knowledge, and increase participation from historically underrepresented groups.
+I am a research data scientist with 7+ years of experience in behavioral sciences. I value open science and transparency to decentralize power, promote the free distribution of knowledge, and increase participation from historically underrepresented groups.
