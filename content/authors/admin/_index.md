@@ -10,7 +10,7 @@ authors: admin
 superuser: true
 
 # Role/position
-role: Data Scientist
+role: Data Science Fellow
 
 # Organizations/Affiliations
 organizations:
@@ -21,8 +21,8 @@ organizations:
 bio: I'm a social research and data scientist working to advance openness, transparency, and social justice
 
 interests:
+- Data Science
 - Open Science & Replicability
-- Data Science (R, Python)
 - Social Justice
 
 education:
