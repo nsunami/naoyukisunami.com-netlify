@@ -44,16 +44,10 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:naoyuki.sunami@gmail.com'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:naoyuki.sunami@gmail.com'
 - icon: twitter
   icon_pack: fab
   link: //twitter.com/n_sunami
-- icon: google-scholar
-  icon_pack: ai
-  link: //scholar.google.com/citations?user=Twe7mmwAAAAJ
-- icon: "researchgate"
-  icon_pack: ai
-  link: "//www.researchgate.net/profile/Naoyuki_Sunami"
 - icon: "github"
   icon_pack: fab
   link: "//github.com/nsunami"
@@ -63,15 +57,12 @@ social:
 - icon: "linkedin"
   icon_pack: fab
   link: "//www.linkedin.com/in/naoyuki-sunami"
-- icon: "osf"
-  icon_pack: ai
-  link: "//osf.io/k6r4t"
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-- icon: cv
-  icon_pack: ai
-  link: Sunami_CV.pdf
+# - icon: cv
+#   icon_pack: ai
+#   link: Sunami_CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "naoyuki.sunami@gmail.com"
