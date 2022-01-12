@@ -1,6 +1,6 @@
 ---
 # Display name
-title: "Naoyuki Sunami (角南直幸)"
+title: "Naoyuki 'Nami' Sunami (角南直幸)"
 
 
 # Username (this should match the folder name)
@@ -10,20 +10,19 @@ authors: admin
 superuser: true
 
 # Role/position
-role: Researcher
+role: Data Science Fellow
 
 # Organizations/Affiliations
 organizations:
-- name: University of Delaware
-  url: "https://www.psych.udel.edu/people/full-list-searchable/nsunami"
+- name: Delaware Data Innovation Lab @ Tech Impact
+  url: "https://ddil.ai/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include belonging and social rejection
+bio: I'm a social research and data scientist working to advance openness, transparency, and social justice
 
 interests:
-- Belonging & Social Rejection/Inclusion
+- Data Science
 - Open Science & Replicability
-- Data Science (R, Python)
 - Social Justice
 
 education:
@@ -45,16 +44,10 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:naoyuki.sunami@gmail.com'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:naoyuki.sunami@gmail.com'
 - icon: twitter
   icon_pack: fab
   link: //twitter.com/n_sunami
-- icon: google-scholar
-  icon_pack: ai
-  link: //scholar.google.com/citations?user=Twe7mmwAAAAJ
-- icon: "researchgate"
-  icon_pack: ai
-  link: "//www.researchgate.net/profile/Naoyuki_Sunami"
 - icon: "github"
   icon_pack: fab
   link: "//github.com/nsunami"
@@ -64,15 +57,12 @@ social:
 - icon: "linkedin"
   icon_pack: fab
   link: "//www.linkedin.com/in/naoyuki-sunami"
-- icon: "osf"
-  icon_pack: ai
-  link: "//osf.io/k6r4t"
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-- icon: cv
-  icon_pack: ai
-  link: Sunami_CV.pdf
+# - icon: cv
+#   icon_pack: ai
+#   link: Sunami_CV.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "naoyuki.sunami@gmail.com"
@@ -84,6 +74,4 @@ user_groups:
 - Visitors
 ---
 
-I am a social psychological scientist with 7+ years of experience designing, executing, and reporting studies in behavioral sciences via open and transparent methods. My work has focused on examining social rejection/inclusion and belonging—based on the premise that social connections are the foundation of the human society.
-
-I value open science and transparency to decentralize power, promote the free distribution of knowledge, and increase participation from historically underrepresented groups.
+I am a research data scientist with 8+ years of experience in behavioral sciences. Through my work, I advance open science and transparency to decentralize power, promote the free distribution of knowledge, and amplify voices of historically underrepresented groups.
