@@ -74,6 +74,4 @@ user_groups:
 - Visitors
 ---
 
-I am a social psychological scientist with 7+ years of experience designing, executing, and reporting studies in behavioral sciences via open and transparent methods. My work has focused on examining social rejection/inclusion and belonging—based on the premise that social connections are the foundation of the human society.
-
-I value open science and transparency to decentralize power, promote the free distribution of knowledge, and increase participation from historically underrepresented groups.
+I am a research data scientist with 7+ years of experience in behavioral sciences, advancing openess and transparency. I value open science and transparency to decentralize power, promote the free distribution of knowledge, and increase participation from historically underrepresented groups.
