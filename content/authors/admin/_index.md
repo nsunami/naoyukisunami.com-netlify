@@ -18,7 +18,7 @@ organizations:
   url: "https://ddil.ai/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include belonging and social rejection
+bio: I'm a social research and data scientist working to advance openness and transparency
 
 interests:
 - Open Science & Replicability
