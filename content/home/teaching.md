@@ -15,12 +15,12 @@ weight = 100
 
 +++
 
-## Measurement and Statistics (UD-PSYC209)
-An introductory statistics course with R
+## Measurement and Statistics 
+I developed and taught an introductory statistics course with R
 - [Sample Syllabus](PSYC209_Syllabus.pdf)
 - [Course Materials](https://osf.io/92n3b/)
 
 ## International Teaching Assistant
-Teaching Assistant at the Statistical Teaching and Analytics Research Training (START) Workshop at teh University of Delaware
+Across two years, I supported 40+ doctoral and master's students for the Statistical Teaching and Analytics Research Training (START) Workshop Program at the University of Delaware
 - 2019: FLACSO (Facultad Latinoamericana de Ciencias Sociales), Quito, Ecuador
 - 2018: Beijing Normal University, Beijing, China
