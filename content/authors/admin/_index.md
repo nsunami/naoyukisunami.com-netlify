@@ -74,4 +74,6 @@ user_groups:
 - Visitors
 ---
 
-I am a research data scientist with 8+ years of experience in behavioral sciences. Through my work, I advance open science and transparency to decentralize power, promote the free distribution of knowledge, and amplify voices of historically underrepresented groups.
+I am a quantitative/data scientist with 8+ years of experience with human data. I believe in the power of openness and transparency in driving collaboration and equitable innovation.
+
+I love coding and solving technical problems. Interested in what I’m up to? Follow me on GitHub 👋
